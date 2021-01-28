@@ -22,11 +22,22 @@ a:hover {
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
-
+.footer-icon {
+  width: 20px;
+}
 
 
 @media (max-width: 574px) {
   body {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-icon {
+    width: 15px;
+  }
+  .footer small {
+    font-size: 10px;
   }
 }
