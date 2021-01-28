@@ -1,0 +1,32 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+b { 
+  font-weight: bold; 
+}
+h4, .h4 {
+  font-weight: bold;
+  margin-top: 3em;
+}
+a {
+  color: #015aef;
+}
+a:hover { 
+  color: #005198; 
+}
+
+.footer-link {
+  display: block;
+  padding: 0 0 0.2rem 0;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+
+
+@media (max-width: 574px) {
+  body {
+    font-size: 14px;
+  }
+}
