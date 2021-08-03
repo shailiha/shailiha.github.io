@@ -185,7 +185,7 @@
        <!-- <img src="./logo-5.png" class="img-fluid mt-5 px-5" style="max-height: 400px" alt="Broadway Dog Trainer logo">-->
       <!--</div>-->
       <div class="row m-0 p-0">
-        <div class="banner col-12 m-0 p-0" style="height: 100vh; margin-top: 0px; background: url('./hills.png'); background-repeat: no-repeat; background-size: cover;">
+        <div class="banner col-12 m-0 p-0" style="height: 100vh; margin-top: 0px; background: url('./hills.jpg'); background-repeat: no-repeat; background-size: cover;">
           <!--<img class="w-100" src="./log-dog.jpg">-->
           
         </div>
@@ -316,7 +316,6 @@
 
   $(window).scroll(function(){
     var wscroll = $(this).scrollTop();
-    console.log("scroll: " + wscroll);
 
 
     if(wscroll > max_scroll){
@@ -330,8 +329,6 @@
       var new_padding = padding - (wscroll/7.5);
       var new_image = image - (wscroll/2);
 
-      console.log("padd: " + new_padding + ", " + $(".navbar").css("padding"));
-      console.log("imag: " + new_image);
 
       if (new_padding < min_padding || new_image < min_image) {
         set_to_min();
@@ -350,7 +347,6 @@
   });
   
   function set_to_min() {
-    console.log("min");
     $(".navbar").addClass("shrink");
     $(".navbar-logo").addClass("shrink");
     $(".navbar").css("padding", min_padding);
@@ -360,7 +356,6 @@
   }
 
   function set_to_max() {
-    console.log("max");
     $(".navbar").css("box-shadow", "none");
     $(".navbar").removeClass("shrink");
     $(".navbar-logo").removeClass("shrink");
